@@ -1,0 +1,158 @@
+/* google font import */
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    /* height: 100%; */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Manrope', sans-serif;
+    font-size: 13px;
+    background-color: hsl(210, 46%, 95%);
+}
+main {
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    
+    height: 100vh;
+}
+.container {
+    display: flex;
+    width:650px;
+    height: 250px;
+    margin: auto;
+    /* border-radius: 10px; */
+}
+.left {
+    width: 39.5%;
+    height: 100%;
+    background-image: url('../images/drawers.jpg');
+    background-size: cover;
+    border-radius: 10px 0 0 10px;
+    
+}
+
+.right {
+    width: 60.5%;
+    padding: 37px;
+    border-radius: 0 10px 10px 0;
+    background-color: #fff;
+    position: relative;
+}
+
+h1 {
+    font-size: 18.5px;
+    font-weight: 700;
+    color: hsl(217, 19%, 35%);
+}
+
+.para {
+    margin: 10px 0;
+    color: hsl(214, 17%, 51%);
+    font-size: 12px;
+}
+
+/* Profile section */
+
+
+.share-div {
+    display: flex;
+    position: relative;
+    
+}
+.profile-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.profile-name {
+    display: flex;
+    flex-direction: column;
+    margin: auto 0;
+    color: hsl(217, 19%, 35%);
+    
+}
+
+.profile-name span {
+    color: hsl(212, 23%, 69%);
+    font-weight: 500;
+}
+
+.share-button {
+    position: absolute;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-image: url('../images/icon-share.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 20px 20px;
+    background-color: #EDF2F8;
+    cursor: pointer;
+    
+}
+.share-button:hover {
+    background-color: hsl(217, 19%, 35%);
+    background-image: url('../images/icon-share-hover.svg');
+    transition: 0.2s ease-in;
+    
+}
+
+.share-hover {
+    position: absolute;
+    top: 115px;
+    right: -60px;
+    width: 240px;
+    height: 50px;
+    background-color:hsl(217, 19%, 35%) ;
+    padding: 10px;
+    border-radius: 10px;
+    display: none;
+    text-align: center;
+}
+
+.show-share .share-hover {
+    display: block;
+    transition: 0.3s ease-in-out;
+}
+
+.social{
+    
+    display: inline-block;
+    position: relative;
+    top: 5px;
+    padding: 0 6px;
+    cursor: pointer;
+}
+
+.share-hover span {
+    text-transform: uppercase;
+    color: hsl(212, 23%, 69%);
+    font-weight: 500;
+    letter-spacing: 5px;
+    padding-left: 25px;
+    padding-right: 5px;
+    
+}
+.triangle {
+    background-color:hsl(217, 19%, 35%) ;
+    margin: 6px 0;
+    
+    
+    width: 18px;
+    height: 18px;
+    transform: rotate(45deg);
+    display: inline-block;
+    /* border: 1px solid red; */
+}
