@@ -19,9 +19,6 @@ body {
 }
 main {
     display: flex;
-    /* justify-content: center;
-    align-items: center; */
-    
     height: 100vh;
 }
 .container {
@@ -58,6 +55,7 @@ h1 {
     margin: 10px 0;
     color: hsl(214, 17%, 51%);
     font-size: 12px;
+    line-height: 1.5;
 }
 
 /* Profile section */
@@ -86,6 +84,7 @@ h1 {
 .profile-name span {
     color: hsl(212, 23%, 69%);
     font-weight: 500;
+    margin-top: 5px;
 }
 
 .share-button {
@@ -103,7 +102,7 @@ h1 {
     
 }
 .share-button:hover {
-    background-color: hsl(217, 19%, 35%);
+    background-color: hsl(214, 17%, 51%);
     background-image: url('../images/icon-share-hover.svg');
     transition: 0.2s ease-in;
     
@@ -155,4 +154,56 @@ h1 {
     transform: rotate(45deg);
     display: inline-block;
     /* border: 1px solid red; */
+}
+
+/* Mobile Screens */
+
+@media (max-width:600px) {
+    body {
+        margin-bottom: 0;
+    }
+    main {
+        position: relative;
+    }
+    .container {
+        
+        display: block;
+        /* border: 1px solid red; */
+        width: 350px;
+        margin-bottom: 50px;
+        position: relative;
+        bottom: 260px;
+    }
+    .left {
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .right {
+        width: 350px;
+        border-radius: 0 0 10px 10px;
+        padding-bottom: 20px;
+    }
+    .para {
+        font-size: 15px;
+    }
+
+    .share-div {
+        margin-top: 20px;
+    }
+
+    .share-hover {
+        /* position: absolute; */
+        top: 280px;
+        left: 0;
+        width: 350px;
+        height: 70px;
+        border-radius: 0 0 10px 10px;
+        
+    }
+
+    .attribution {
+        position: relative;
+        top: 105px;
+    }
 }
