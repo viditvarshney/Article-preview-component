@@ -185,7 +185,7 @@ h1 {
         padding-bottom: 20px;
     }
     .para {
-        font-size: 15px;
+        font-size: 14px;
     }
 
     .share-div {
@@ -194,7 +194,7 @@ h1 {
 
     .share-hover {
         /* position: absolute; */
-        top: 280px;
+        top: 270px;
         left: 0;
         width: 350px;
         height: 70px;
